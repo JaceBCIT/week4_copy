@@ -1,24 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    p{
+      color: crimson;
+    }
+
+    #large{
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .sect{
+      background-color: #9acd32;
+    }
+
+    #p1{
+      background-color: yellow;
+    }
+
+  </style>
   <title>Week 4 exercise</title>
 </head>
+
 <body>
-  <div id="header"><h1>This is the about semantic html</h1></div>
-  <div class="section">
+  <header id="large"><h1>This is the about semantic html</h1></header>
+
+  <section class="sect">
     <h2>Why senmantic html?</h2>
-    <div class="article">
+
+    <article class="article">
       <p>Elements such as &lt;header&gt;, &lt;footer&gt; and &lt;article&gt; are all considered semantic 
       because they accurately describe the purpose of the element and the type of content that is inside them.
       The code is much easier to read.</p>
-      <div class="figure">
-        <img>
-        <div class="figcaption"></div>
-      </div>
-    </div>
-  </div>
-  <div id="footer"></div>
+      
+      <figure class="figure">
+        <img src="images/appa.jpg" alt="image from images directiory."
+        width="300px"
+        height="auto">
+        <figcaption class="figcaption">
+          This will be displayed
+        </figcaption>
+      </figure>
+    
+    </article>
+  </section>
+  
+  <footer id="footer1">
+    
+    <p id=p1>Week 4 exercises done by Byeongju Kang</p>
+
+  </footer>
 </body>
 </html>
